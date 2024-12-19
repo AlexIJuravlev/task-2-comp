@@ -3,12 +3,10 @@ import styles from './app.module.css';
 import data from './data.json';
 
 export const App = () => {
-	// Можно задать 2 состояния — steps и activeIndex
 	const steps = data;
 	const [activeIndex, setActiveIndex] = useState(1);
 	const [dis, setDis] = useState(true);
 
-	// И определить 3 обработчика: Клик назад, Клик вперед, Начать сначала
 
 	function clickUp() {
 		setActiveIndex(activeIndex + 1);
